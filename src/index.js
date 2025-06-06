@@ -1,40 +1,31 @@
 import "./style.css";
-import "./home.css";
-import homeImage from "./img/restaurant.jpg";
-
-const homeTxtArr = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nunc risus. Cras aliquet et sapien sit amet efficitur. Nunc vel mi sit amet dui convallis blandit et nec leo. Vivamus purus lacus, interdum a sapien at, ullamcorper luctus ipsum. Morbi sapien felis, eleifend a elit id, vehicula scelerisque odio. Nullam magna neque, rhoncus non nunc ut, placerat fermentum erat. Cras elementum blandit dolor, quis ultricies dui accumsan sit amet. Cras vulputate faucibus venenatis. Vestibulum pulvinar lobortis augue, vitae hendrerit mauris mollis id. Donec condimentum pretium dolor ut mollis. Cras eget molestie nunc. Integer semper at dolor quis semper. Aenean ac varius eros.",
-  "Cras vestibulum dapibus nisi, nec rhoncus elit mattis tincidunt. Suspendisse et nisi diam. Nulla sollicitudin vel risus et pharetra. Mauris at tempor nisl. Integer pharetra odio sed nisl pellentesque, vel malesuada justo tristique. Nullam consequat dui sit amet porttitor faucibus. Donec tincidunt felis tempor turpis efficitur, sit amet consequat felis aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis id tellus ut ipsum varius eleifend. Aenean tristique imperdiet felis non dictum. Vivamus nulla tellus, cursus vitae nulla in, scelerisque convallis nibh.",
-  "Nullam ac orci ligula. Sed sed hendrerit quam. Curabitur malesuada diam quis quam sollicitudin, in aliquet nulla ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec odio tellus, aliquet vel iaculis quis, scelerisque dapibus metus. Morbi fermentum, sem lacinia tempor efficitur, ipsum risus dictum lacus, in iaculis urna lacus id turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam accumsan consectetur lectus at mattis. Aenean sagittis tincidunt magna. Nunc convallis lectus eu diam accumsan, vitae rhoncus turpis elementum.",
-];
+import { homeContent } from "./home.js";
+import { menuContent } from "./menu.js";
 
 const container = document.querySelector("#content");
+container.appendChild(homeContent);
 
-const content = document.createElement("div");
-content.id = "home";
+const homeBtn = document.querySelector("#homePage");
+const menuBtn = document.querySelector("#menuPage");
+const aboutBtn = document.querySelector("#aboutPage");
 
-const heading = document.createElement("h2");
-heading.classList.add("heading");
-heading.textContent = "My Restaurant";
-
-content.appendChild(heading);
-
-const txtContainer = document.createElement("div");
-txtContainer.classList.add("text-content");
-
-homeTxtArr.forEach((item) => {
-  const para = document.createElement("p");
-  para.textContent = item;
-  txtContainer.appendChild(para);
+homeBtn.addEventListener("click", () => {
+  clearContent();
+  container.appendChild(homeContent);
 });
 
-const imgContainer = document.createElement("div");
-imgContainer.classList.add("image-sec");
-const myImage = new Image(500, 320);
-myImage.src = homeImage;
-myImage.alt = "Restaurant Image";
-imgContainer.appendChild(myImage);
+menuBtn.addEventListener("click", () => {
+  clearContent();
+  container.appendChild(menuContent);
+});
 
-content.appendChild(txtContainer);
-content.appendChild(imgContainer);
-container.appendChild(content);
+aboutBtn.addEventListener("click", () => {
+  clearContent();
+  container.appendChild(aboutContent);
+});
+
+const clearContent = () => {
+  while (container.firstChild) {
+    container.firstChild.remove();
+  }
+};
