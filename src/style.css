@@ -131,13 +131,31 @@ table {
 
 /* Custom CSS starts */
 header {
+  background-color: black;
+  color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  box-shadow: 0px 5px 10px #000;
+  padding: 1rem 5rem;
+  box-shadow: 0px 2px 10px #000;
+}
+header h2 {
+  font-size: 2rem;
 }
 
 header .menu {
   display: flex;
   justify-content: center;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+}
+footer a {
+  color: #fff;
 }

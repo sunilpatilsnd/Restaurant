@@ -1,0 +1,21 @@
+#home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  max-width: 80%;
+  margin: 2rem auto;
+  grid-gap: 2rem;
+}
+#home .heading {
+  grid-column: 1 / span 2;
+  font-size: 2rem;
+}
+#home p {
+  padding-bottom: 1rem;
+}
+#home .image-sec {
+  align-self: center;
+}
+#home .image-sec img {
+  border-radius: 5px;
+}
