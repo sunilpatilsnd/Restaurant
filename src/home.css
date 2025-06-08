@@ -4,11 +4,12 @@
 
   max-width: 80%;
   margin: 2rem auto;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 #home .heading {
   grid-column: 1 / span 2;
   font-size: 2rem;
+  padding-bottom: 2rem;
 }
 #home p {
   font-size: 1rem;
@@ -20,4 +21,15 @@
 #home .image-sec img {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 500px) {
+  #home {
+    display: block;
+    margin: 10px auto;
+  }
+  #home .image-sec img {
+    width: 300px;
+    height: auto;
+  }
 }
