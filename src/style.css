@@ -185,3 +185,12 @@ footer {
 footer a {
   color: #fff;
 }
+
+@media screen and (max-width: 500px) {
+  header {
+    justify-content: center;
+  }
+  header h2 {
+    display: none;
+  }
+}
