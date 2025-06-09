@@ -1,4 +1,4 @@
-import "./menu.css";
+import "../css/menu.css";
 
 const hotelMenu = {
   Breakfast: {

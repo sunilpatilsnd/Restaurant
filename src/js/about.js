@@ -1,4 +1,4 @@
-import "./about.css";
+import "../css/about.css";
 
 const textContent = [
   "Praesent commodo venenatis urna vitae sagittis. Vestibulum enim est, convallis vitae eros eget, molestie euismod ante. Vestibulum non luctus elit. Integer eu risus ac justo accumsan scelerisque non sit amet est. Maecenas quis elementum ante, vel feugiat dui. Suspendisse congue odio quis nulla consequat porta. Curabitur porttitor, leo sit amet pulvinar dignissim, diam mi semper risus, eget iaculis lorem nisl et dui. Maecenas mattis, risus eget ullamcorper aliquet, eros mi fringilla justo, quis condimentum felis neque ut nisl. Donec finibus dui vitae lorem ornare sollicitudin. Pellentesque aliquet leo at aliquet consequat.",

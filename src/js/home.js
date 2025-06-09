@@ -1,5 +1,5 @@
-import "./home.css";
-import homeImage from "./img/restaurant.jpg";
+import "../css/home.css";
+import homeImage from "../img/restaurant.jpg";
 
 const homeTxtArr = [
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nunc risus. Cras aliquet et sapien sit amet efficitur. Nunc vel mi sit amet dui convallis blandit et nec leo. Vivamus purus lacus, interdum a sapien at, ullamcorper luctus ipsum. Morbi sapien felis, eleifend a elit id, vehicula scelerisque odio. Nullam magna neque, rhoncus non nunc ut, placerat fermentum erat. ",

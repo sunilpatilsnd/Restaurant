@@ -1,4 +1,4 @@
-import "./style.css";
+import "../css/style.css";
 import { homeContent } from "./home.js";
 import { menuContent } from "./menu.js";
 import { aboutContent } from "./about.js";
