@@ -1,0 +1,87 @@
+{
+  "Breakfast": {
+    "items": [
+      {
+        "name": "Pancakes",
+        "price": 8,
+        "description": "Fluffy pancakes served with maple syrup."
+      },
+      {
+        "name": "Omelette",
+        "price": 10,
+        "description": "Three-egg omelette with your choice of fillings."
+      },
+      {
+        "name": "Toast",
+        "price": 5,
+        "description": "Two slices of toast with butter and jam."
+      }
+    ],
+    "note": "Breakfast is served from 7:00 AM to 10:00 AM"
+  },
+  "Lunch": {
+    "items": [
+      {
+        "name": "Sandwich",
+        "price": 12,
+        "description": "Your choice of meat or vegetarian sandwich."
+      },
+      {
+        "name": "Salad",
+        "price": 14,
+        "description": "Fresh salad with mixed greens and your choice of dressing."
+      },
+      {
+        "name": "Soup",
+        "price": 9,
+        "description": "Homemade soup of the day."
+      },
+      {
+        "name": "Chicken Sandwich",
+        "price": 20,
+        "description": "Freshly made chicken sandwich"
+      }
+    ],
+    "note": "Lunch is served from 12:00 PM to 3:00 PM"
+  },
+  "Dinner": {
+    "items": [
+      {
+        "name": "Steak",
+        "price": 25,
+        "description": "Grilled steak served with mashed potatoes and vegetables."
+      },
+      {
+        "name": "Pasta",
+        "price": 20,
+        "description": "Pasta with your choice of sauce."
+      },
+      {
+        "name": "Fish",
+        "price": 22,
+        "description": "Pan-seared fish served with rice and vegetables."
+      }
+    ],
+    "note": "Dinner is served from 6:00 PM to 10:00 PM"
+  },
+  "Drinks": {
+    "items": [
+      {
+        "name": "Coffee",
+        "price": 3
+      },
+      {
+        "name": "Tea",
+        "price": 3
+      },
+      {
+        "name": "Juice",
+        "price": 4
+      },
+      {
+        "name": "Soda",
+        "price": 4
+      }
+    ]
+  }
+}
